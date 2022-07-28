@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    @apply font-sans text-white;
+    outline: none;
+}
+
+#root { 
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    background-color: rgb(27, 25, 29);
+}
+
+[type='number'] { 
+    background: none
+}
+
+h1 { 
+    @apply text-2xl font-bold;
+}
+
+p {
+    @apply text-justify text-zinc-300 text-sm;
+}
+
+button { 
+    @apply bg-orange-500 font-bold hover:bg-orange-700 active:bg-orange-800 transition ease-in-out;
+}
+
+.h\-8\/10{
+    height: 80%;
+}
+
+.react-datetime-picker__wrapper {
+    border: none;
+}
+
+.react-calendar * { 
+    @apply text-black !important;
+}
+
+.react-datetime-picker__inputGroup__amPm *{ 
+    @apply text-black !important;
+}
